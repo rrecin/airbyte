@@ -190,6 +190,15 @@ class MySqlSourceConfigurationSpecification : ConfigurationSpecification() {
 
     @JsonProperty("tmp_skip_synchronized_counts")
     val tmpSkipSynchronizedCounts: Boolean? = null
+
+    @JsonProperty("buffer_byte_size")
+    val bufferByteSize: Int? = null
+
+    @JsonProperty("output_format")
+    val outputFormat: String? = null
+
+    @JsonProperty("dev_null_after_serialization")
+    val devNullAfterSerialization: Boolean? = null
 }
 
 @JsonTypeInfo(use = JsonTypeInfo.Id.NAME, property = "mode")
